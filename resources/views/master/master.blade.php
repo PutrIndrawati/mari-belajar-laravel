@@ -6,7 +6,7 @@
 	<style type="text/css">
 		@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
 		.navbar{
-			background-color: #d9bf77;
+			background-color: #A9A9A9;
 		}
 		.hzz {
 			font-family: 'Cinzel';
@@ -16,6 +16,11 @@
 		.display-1{
 			margin-top: 5%;
 		}
+
+		.navigasi1{
+			color: red;
+		}
+		
 	</style>
 </head>
 <body>

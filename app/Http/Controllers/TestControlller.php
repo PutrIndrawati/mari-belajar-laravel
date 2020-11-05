@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Siswi;
 
-class SiswiController extends Controller
+class TestControlller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +13,7 @@ class SiswiController extends Controller
      */
     public function index()
     {
-        //untuk menampilkan view data
+        //
     }
 
     /**
@@ -24,7 +23,7 @@ class SiswiController extends Controller
      */
     public function create()
     {
-        //untuk menampilkan form
+        //
     }
 
     /**
@@ -35,26 +34,16 @@ class SiswiController extends Controller
      */
     public function store(Request $request)
     {
-        //untuk mengirim ke database
-        Siswi::create($request->all());
-        
-        //Eloquent
-        $siswi = new Siswi();
-        $siswi->nama = $request->nama;
-        $siswi->telepon = $request->telepon;
-        $siswi->alamat = $request->alamat;
-        $siswi->save();
-        return redirect()->back();
-
-
+        //
     }
+
     /**
      * Display the specified resource.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    function show($id)
+    public function show($id)
     {
         //
     }
@@ -65,7 +54,7 @@ class SiswiController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    function edit($id)
+    public function edit($id)
     {
         //
     }
@@ -77,7 +66,7 @@ class SiswiController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    function update(Request $request, $id)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -88,8 +77,8 @@ class SiswiController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    function destroy($id)
+    public function destroy($id)
     {
-        //untuk menghapus
+        //
     }
 }

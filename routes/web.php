@@ -8,3 +8,10 @@ Route::get('/',function(){
 Route::get('/about',function(){
 	return view ('about');
 });
+
+Route::get('/data',function(){
+	return view ('data');
+});
+
+
+Route::post('/data', 'SiswiController@store');
